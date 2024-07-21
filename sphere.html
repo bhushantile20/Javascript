@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      
+</head>
+<body>
+    <form>
+        Enter a radius of spehre <input type="text" id="radius"> <span id="result"></span> <br>
+
+        <div id="result"></div>
+        <input type="button" value="Calculate Volume" onclick="calculate()">
+    </form>
+
+
+    <script>
+
+        function calculate()
+        {
+            
+           
+           
+            rad= document.getElementById("radius").value;
+            v=(4/3)*3.14*rad*rad*rad;
+
+            //document.write("Volume of sphere:"+v);
+              // alert("Volume of sphere"+v);
+               //console.log("volume of sphere"+v);
+               document.getElementById('result').style.color='red'
+               document.getElementById('result').innerHTML="volume of sphere :"+v;
+        }
+    </script>
+</body>
+</html>
