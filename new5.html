@@ -1,0 +1,79 @@
+<!-- fieldset and legend :
+<fieldset > defines a frame 
+    <legend> defines a caption for frame</legend>
+</fieldset> 
+//legenf
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        fieldset{
+            margin-top:30px;
+            
+        }
+        dt{
+            font-weight:bold ;
+            margin:20px;
+        }
+        legend{
+            
+            text-align:center;
+            border:2px solid black;
+            padding:10px;
+            font-size:17px;
+            font-weight:bold;
+            border-radius:20px;
+            width:200px;
+            box-shadow:2px 3px 3px  gray ;
+            background-color:darkcyan;
+            color:white;
+        }
+        fieldset{
+            box-shadow: 3px 3px 2px darkcyan;
+        }
+        h1{
+            text-align:center;
+            text-shadow:2px 2px 2px black;
+            color:yellow;
+           border:black;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Category</h1>
+    <fieldset>
+      <legend>basic detials</legend>
+      <dl>
+        <dt>Name</dt>
+        <dd>Samsung Tv</dd>
+        <dt>Price</dt>
+        <dd>6900000</dd>
+    </dl>
+    </fieldset>
+    <fieldset>
+        <legend>shpping details</legend>
+        <dl>
+            <dt>Stock</dt>
+            <dd>Available</dd>
+            <dt>Shipped To</dt>
+            <dd> Delhi,hydrabad</dd>
+            <dt>vednote</dt>
+            <dd> </dd>
+        </dl>
+    </fieldset>
+</body>
+</html>
+
+
+<!--  Box shadow cant be applied to text you have to use "text-shadow:" 
+  h2{
+  text-shadow:
+  }-->
