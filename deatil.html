@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <script type="text/javascript">
+        function add()
+        {
+             no1=parseInt(document.getElementById("first").value);
+             no2=parseInt(document.getElementById("Second").value);
+             document.getElementById("mydiv").innerHTML="Addition:"+(no1+no2);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Enter a first no <input type="text" id="first" /><br>
+        Enter a Second number <input type="text" id="second"/><br>
+        <input type="button" value="ADD" onclick="add()"/>
+        <div id="mydiv" ></div>
+    </form>
+    
+</body>
+</html>
