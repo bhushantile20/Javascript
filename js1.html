@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average of three numbers</title>
+    <script>
+        function calavg()
+        {
+            var inpnum1=14;
+            var inpnum2=28;
+            var inpnum3=34;
+             numAvg=doCalAvg(inpnum1,inpnum2,inpnum3);
+             alert("The average is:" +numAvg);
+        }
+
+        function doCalAvg(inpNum1,inpNum2,inpNum3)
+        {
+             var ans;
+             ans=(Number(inpNum1)+Number(inpNum2)+Number(inpNum3))/4;
+             return(ans);
+        }
+    </script>        
+</head>
+
+    <body onLoad="calcAvg();">
+
+    </body>
+ 
+</html>
