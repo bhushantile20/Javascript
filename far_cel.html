@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+    <script language="JavaScript">
+             function inputfah()
+             {
+                 var fah=100;
+                 ansCel=doCelCalc(fah);
+                 alert(fah+"Degrees fareheight is" + ansCel + "Degrees Celsius");
+             }
+             function doCelCalc(fah)
+             {
+                var ans=((Number(fah) -32) /1.8);
+                return(ans);
+             }
+    </script>
+</head>
+<body>
+    <input type="button" value="convert farenheit to celsius" onClick="inputFah();">
+
+    
+</body>
+</html>
