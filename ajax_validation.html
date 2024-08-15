@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var xmlHttp=false;
+            function validate(name)
+            {
+                 if(window.XMLHttpRequest)
+                 {
+                    xmlHttp =new XMLHttpRequest();
+                 }
+                 else if(window.ActiveXObject)
+                 {
+                    xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+                 }
+                 if(xmlHttp==null)
+                 {
+                    alert("Browser does not support HTTP reuest");
+                    return;
+                 }
+                 xmlHttp.open("GET","validation.php?name="+name,true);
+                 xmlHttp.onreadystatechange=statechanged
+                 xmlHttp.send(null);
+
+                 function stateChanged()
+                 {
+                     if(xmlHttp.readyState==4)
+                     {
+                        document.getElementById("res").innerHTML=xmlHttp.responseText;
+
+                     }
+                 }
+            }
+        </script>
+    </head>
+
+    <body>
+        <form>
+            UserName:<input type="text" name="name" onkeyUp="validate(this.value)"/>
+            <div id="res"></div>
+        </form>
+    </body>
+</html>
