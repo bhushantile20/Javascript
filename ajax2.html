@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function loadXMLDoc()
+        {
+            var xmlhttp;
+            if(window.XMLHttpRequest)
+        {
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {
+            xmlhttp=new ActiveXobject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.open("GET","a.txt",true);
+        xmlhttp.send(null);
+        xmlhttp.onreadystatechange=function()
+    {
+        if(xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+        document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+    }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="loadXMLDoc()">print</button>
+    <div id="myDiv"></div>
+</body>
+</html>
