@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <form>
+        Enter a number <input type="text" id="no"> <br>
+
+        <input type="button" value="Table" onclick="fun()">
+
+        <div id="result"></div>
+    </form>
+
+    <script>
+        function fun()
+        {
+            no = parseInt(document.getElementById('no').value);
+            for(i=1;i<=10;i++)
+                document.getElementById('result').innerHTML += no+" * "+i+" = "+(no*i)+"<br>";
+        }
+
+    </script>
+</body>
+</html>
