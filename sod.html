@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <form>
+        Enter a number <input type="text" id="no"> <br>
+        <input type="button" value="calculate" onclick="calculate()">
+
+        <div id="result"></div>
+    </form>
+    <script>
+        function calculate(){
+            no = parseInt(document.getElementById('no').value);
+            no1 = no;
+            sum = 0;
+            while(no>0)
+            {
+                d = no%10;      //separation of digit
+                sum = sum + (d*d*d);  //addition of digit
+                no = Math.floor(no/10); //change the number
+            }            
+
+            if(no1==sum)
+                document.getElementById('result').innerHTML = no1+' is armstrong number';
+            else
+                document.getElementById('result').innerHTML = no1+' is not armstrong number';
+        }
+    </script>
+</body>
+</html>
