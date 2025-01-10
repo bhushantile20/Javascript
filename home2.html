@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function bodyload() {
+            // Set the source of the image
+            document.getElementById('pic').src = "../public/images/neckband.png";
+
+            // Set the button values
+            document.getElementById('btnRegister').value = "Register";
+            document.getElementById('btnLogin').value = "Login";
+        }
+        
+    </script>
+</head>
+<body onload="bodyload()">
+
+    <!-- Image -->
+    <img id="pic" width="100" height="100" border="1" alt="Neckband Image">
+
+    <!-- Register Form -->
+    <div>
+        <form name="frmRegister">
+            <h2>Register</h2>
+            UserName:
+            <input type="text" name="txtName">
+            <input type="button" id="btnRegister">
+        </form>
+    </div>
+
+    <!-- Login Form -->
+    <div>
+        <form name="frmLogin">
+            <h1>Login</h1>
+            Email:
+            <input name="textEmail" type="email">
+            <input name="btnLogin" id="btnLogin" type="button">
+        </form>
+    </div>
+</body>
+</html>

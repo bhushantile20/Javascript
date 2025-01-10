@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyload()
+        {
+
+           document.getElementById("pic").src="../public/images/mobile.png"; 
+           document.getElementById("btnRegister").value="Register";
+           document.getElementById("btnLogin").value="Login";
+
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+
+    <img width="100" id="pic" name="pic" height="100" border="1">
+    <div>
+        <form>
+            <h2>Reigster</h2>
+            UserName:<input type="text" name="txtName"> <input id="btnRegister" name="btnRegister">
+        </form>
+    </div>
+    <div>
+        <form>
+            <h2>Login</h2>
+            EmailID:<input type="text" name="emailid" ><input id="btnLogin" name="btnLogin">
+        </form>
+    </div>
+</body>
+    
+
+
+    
+</body>
+</html>
